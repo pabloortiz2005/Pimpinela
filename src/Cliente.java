@@ -4,8 +4,18 @@ import java.io.IOException;
 import java.net.Socket;
 import java.util.Scanner;
 
+
+/**
+ * Clase que representa un cliente que se conecta a un servidor.
+ * El cliente envía y recibe mensajes al servidor hasta que se cumplen ciertas condiciones.
+ * Cada mensaje enviado debe ser el esperado por el servidor, y el cliente debe repetir los mensajes hasta que el servidor de el visto bueno
+ */
 public class Cliente {
-    public static void main(String[] args) throws IOException {
+
+/**
+ * Método principal que establece la conexión con el servidor y gestiona la comunicación.
+ */
+ public static void main(String[] args) throws IOException {
 
         String host = "localhost";
         DataInputStream in = null;

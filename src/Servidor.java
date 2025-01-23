@@ -4,7 +4,15 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+/**
+ * Clase que representa un servidor que espera la conexión de un cliente, recibe mensajes y valida su contenido.
+ * El servidor responde a los mensajes del cliente con respuestas predefinidas
+ */
 public class Servidor {
+/**
+ * Método principal que inicia el servidor, espera conexiones de clientes y gestiona la comunicación
+ * entre el servidor y el cliente.
+ */
     public static void main(String[] args) throws IOException {
 
         DataInputStream in = null;
